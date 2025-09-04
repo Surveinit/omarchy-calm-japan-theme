@@ -1,7 +1,7 @@
 {
   "name": "CALM-DARK-JAPAN",
   "created_at": "2025-08-31T20:17:20.224107266+00:00",
-  "modified_at": "2025-09-01T07:37:50.610903839+00:00",
+  "modified_at": "2025-09-04T14:47:09.949884900+00:00",
   "apps": {
     "alacritty": {
       "colors": {
@@ -115,6 +115,13 @@
       "active_border": "8A8A8D",
       "colors": {
         "active_border": "FADB7F"
+      },
+      "general": {
+        "active_border": "a9a9aa",
+        "border_size": 3,
+        "gaps_in": 4,
+        "gaps_out": 12,
+        "inactive_border": "2e2e2e"
       }
     },
     "hyprlock": {
@@ -151,6 +158,7 @@
     "neovim": {
       "lazy": false,
       "priority": 1000,
+      "raw_config": "-- lua/plugins/rose-pine.lua\nreturn {\n\t\"rose-pine/neovim\",\n\tname = \"rose-pine\",\n\tconfig = function()\n\t\tvim.cmd(\"colorscheme rose-pine\")\n\tend\n}",
       "theme_name": "matteblack",
       "theme_repo": "tahayvr/matteblack.nvim"
     },
